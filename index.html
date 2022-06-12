@@ -162,19 +162,19 @@ src="https://www.facebook.com/tr?id=554770809270611&ev=PageView&noscript=1"
  var x = window.matchMedia("(max-width: 480px)");  
  if (x.matches) {    
  var youtubeId = "6dV3PkMoWnU";
- var vplay = 1;
+ var vplay = 0;
  $("#cfs").addClass("cfsm");    
  }
 
   else 
   { 
   var youtubeId = "6dV3PkMoWnU";
-  var vplay = 0;
+  var vplay = 1;
   }  
 </script> 
 <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
 <script>
-  var muteStatus =0;
+  var muteStatus =1;
 
 var c = 0;
 
@@ -210,7 +210,7 @@ function onYouTubeIframeAPIReady() {
 
             fs: 0,
 
-            playsinline: 0,
+            playsinline: 1,
 
             modestbranding: 1,
 
@@ -438,7 +438,7 @@ $(".cov").click(function() {
 
 $(".covall").click(function() {
 
-    player.pauseVideo();
+    player.();
 
     $("#cfs").hide();
 

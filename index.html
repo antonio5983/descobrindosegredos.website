@@ -206,7 +206,7 @@ function onYouTubeIframeAPIReady() {
 
             controls: 0,
 
-            disablekb: 0,
+            disablekb: 1,
 
             fs: 0,
 
@@ -227,7 +227,7 @@ function onYouTubeIframeAPIReady() {
 
         events: {
 
-            onReady: PlayerReady,
+            onReady: onPlayerReady,
 
             onStateChange: onPlayerStateChange,
 

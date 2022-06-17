@@ -169,7 +169,7 @@ src="https://www.facebook.com/tr?id=554770809270611&ev=PageView&noscript=1"
   else 
   { 
   var youtubeId = "6dV3PkMoWnU";
-  var vplay = 1;
+  var vplay = 0;
   }  
 </script> 
 <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
@@ -296,13 +296,13 @@ function onPlayerReady() {
 
     player.playVideo();
 
-    if (na == 0) {
+    if (na == 1) {
 
         resetvid();
 
     }
 
-    if (sc == 0) {
+    if (sc == 1) {
 
         updateTimerDisplay();
 

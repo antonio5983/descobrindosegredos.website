@@ -247,7 +247,7 @@ function mutevid() {
 
     player.setVolume(0);
 
-    muteStatus = 0;
+    muteStatus = 1;
 
 }
 
@@ -296,13 +296,13 @@ function onPlayerReady() {
 
     player.playVideo();
 
-    if (na == 1) {
+    if (na == 0) {
 
         resetvid();
 
     }
 
-    if (sc == 1) {
+    if (sc == 0) {
 
         updateTimerDisplay();
 
